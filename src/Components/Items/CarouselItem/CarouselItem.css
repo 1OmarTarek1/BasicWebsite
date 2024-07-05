@@ -1,0 +1,15 @@
+.carouselItem {
+    min-width: 250px;
+    min-height: 300px;
+    display: grid !important;
+    place-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--bg-component);
+}
+
+@media screen and (max-width: 420px) {
+    .carouselItem {
+        min-width: unset;
+    }
+}

@@ -1,0 +1,20 @@
+.MainSection {
+    margin: var(--distance-main) var(--margin-main);
+}
+.MainSection .SectionTitle{
+    background-color: var(--bg-component);
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.MainSection .SectionWrapper{
+    padding: 0px;
+    background-color: transparent;
+}
+
+@media screen and (max-width:768px) {
+    .MainSection {
+        margin: var(--distance-main) calc(var(--margin-main) / 2);
+    }
+}

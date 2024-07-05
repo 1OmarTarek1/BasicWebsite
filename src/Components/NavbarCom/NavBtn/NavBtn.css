@@ -1,0 +1,48 @@
+    /*Button*/
+    .navbarSec .navBtn{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border: 2px solid transparent;
+        border-radius: 25% ;
+        transition: var(--transition-main);
+    }
+    .navbarSec .navBtn.opened{
+        border: 2px solid var(--color-primary);
+        border-radius: 50%;
+    }
+    .navbarSec .navBtn span{
+        width: 18px;
+        height: 2px;
+        background-color: var(--font-navColor);
+        transition: var(--transition-main);
+    }
+    .navbarSec .navBtn:hover span{
+        background-color: var(--color-primary);
+    }
+    .navbarSec .navBtn.opened span{
+        background-color: var(--color-primary);
+    }
+    .navbarSec .navBtn.opened span:nth-child(2){
+        width: 0px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navbarSec .navBtn.opened span:nth-child(1){
+        position: relative;
+        top: 6px;
+        transform: rotate(-45deg);
+        width: 8px;
+    }
+    .navbarSec .navBtn.opened span:nth-child(3){
+        position: relative;
+        top: -6px;
+        transform: rotate(45deg);
+        width: 8px;
+    }

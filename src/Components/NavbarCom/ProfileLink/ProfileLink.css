@@ -1,0 +1,33 @@
+.profileLink{
+    width: 33px;
+    height: 33px;
+    margin-left: 10px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--font-navColor);
+    color: var(--font-navColor);
+    background-color: var(--font-navColor);
+    transition: var(--transition-main);
+}
+
+.profileLink:hover{
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+.profileLink.active{
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 10px 1px var(--color-primary);
+}
+
+.profileLink svg{
+    border-radius: 50%;
+    color: var(--font-navColor);
+    transition: var(--transition-main);
+}
+.profileLink:hover svg{
+    color: var(--color-primary);
+}
+.profileLink.active svg{
+    color: var(--color-primary);
+}

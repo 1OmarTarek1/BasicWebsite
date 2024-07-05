@@ -1,0 +1,28 @@
+.MainCarouselSec {
+    margin: 0px;
+    padding: 0px;
+}
+.MainCarouselSec .slick-slide {
+    margin-inline: 5px;
+}
+
+.MainCarouselSec .slick-next {
+    right: 25px;
+}
+.MainCarouselSec .slick-next::before,
+.MainCarouselSec .slick-prev::before{
+    font-size: 30px;
+    color: #000;
+}
+
+.MainCarouselSec .slick-prev {
+    left: 15px;
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 420px) {
+    .MainCarouselSec .slick-slide {
+        margin-inline: 0px;
+    }
+}

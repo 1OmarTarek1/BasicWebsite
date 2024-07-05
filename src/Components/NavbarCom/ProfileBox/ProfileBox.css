@@ -1,0 +1,97 @@
+/*Profile Box*/
+.navbarSec .profileBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    position: absolute;
+    top: 62px;
+    right: 10px;
+    z-index: 3;
+    background-color: var(--bg-nested);
+    border: 1px solid #ffffff23;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    font-size: 13px;
+    color: #ffffffc2;
+    cursor: default;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-main);
+}
+.navbarSec .profileBox .proBxLink{
+    width: 100%;
+    color: var(--font-navColor);
+    transition: var(--transition-main);
+}
+
+/*start show box with js*/
+.navbarSec .profileBox.opened{
+    visibility: visible;
+    opacity: 1;
+}
+/*end show box with js*/
+
+.navbarSec .BoxContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navbarSec .profileItem .proBxLink{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbarSec .profileItem {
+    display: flex;
+    align-items: center;
+    padding: 7px 15px;
+    cursor: pointer;
+    transition: var(--transition-main);
+}
+.navbarSec .profileItem:first-child {
+    padding-block: 10px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #ffffff23;
+}
+.navbarSec .profileItem:last-child {
+    padding-block: 10px;
+    margin-top: 7px;
+    border-top: 1px solid #ffffff23;
+}
+
+/*theme btn*/
+.proBxLink .switch {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 15px;
+}
+
+.proBxLink .switch .slider:before {
+    height: 9px;
+    width: 9px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+}
+
+.proBxLink .switch input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+/*theme btn*/
+
+
+/*Start Effect*/
+.navbarSec .profileItem .proBxLink:hover{
+    color: var(--color-primary);
+    transform: translateX(5px);
+}
+.navbarSec .profileItem .proBxLink.active{
+    color: var(--color-primary);
+}
+/*End Effect*/
+
