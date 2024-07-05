@@ -15,7 +15,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename='/BasicWebsite'>
         <DTitle />
         <div className="App">
           <NavbarSec />
